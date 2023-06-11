@@ -75,6 +75,10 @@ a {
   color: #fff;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 .fs-80 {
   font-size: 80px !important;
 }
