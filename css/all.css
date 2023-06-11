@@ -75,6 +75,14 @@ a {
   color: #fff;
 }
 
+.fs-80 {
+  font-size: 80px !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
 .header h1 {
   margin-top: 40px;
   font-size: 120px;
@@ -204,6 +212,9 @@ a {
     font-size: 32px;
     line-height: 38.4px;
   }
+  .service-list .card-title {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 768px) {
   .service-list {
@@ -240,8 +251,10 @@ a {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .enterprise {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .enterprise::after,
@@ -291,6 +304,9 @@ a {
   display: flex;
   flex-flow: column wrap;
   background-color: #121212;
+}
+.comment-list .list-card:last-child {
+  margin-right: 0;
 }
 
 .stars {
@@ -346,16 +362,21 @@ a {
   .comment-list {
     margin-top: 48px;
     overflow-x: scroll;
-    overflow: hidden;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+  }
+  .comment-list::-webkit-scrollbar {
+    display: none;
   }
   .comment-list .list-card {
     margin-top: 20px;
-    width: calc(100% - 40px);
+    width: 100%;
     padding: 40px 20px;
   }
   .comment-list .list-card .comment-content {
-    border: 1px solid red;
-    width: calc(100vw - 80px);
+    width: calc(100vw - 65px);
   }
   .cooperation .paginator {
     display: flex;
@@ -530,6 +551,10 @@ a {
 .cards-container .card .card-info .module-wrapper .module-type, .cards-container .card .card-info .function-wrapper .module-type {
   font-weight: 700;
 }
+.cards-container .card .card-info .function-wrapper .function-name {
+  line-height: 1.5;
+}
+
 .paginator {
   display: flex;
   justify-content: flex-end;

@@ -167,7 +167,10 @@
             }
 
             .function-wrapper {
-                @extend .module-wrapper
+                @extend .module-wrapper;
+                .function-name {
+                    line-height: 1.5;
+                }
             }
         }
     }

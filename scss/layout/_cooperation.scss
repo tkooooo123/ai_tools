@@ -15,14 +15,18 @@
   overflow-x: auto;
   position: relative;
 }
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .enterprise::-webkit-scrollbar {
   display: none;
 }
+
 /* Hide scrollbar for IE, Edge and Firefox */
 .enterprise {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .enterprise::after,
@@ -33,6 +37,7 @@
   height: 40px;
   top: 0;
 }
+
 .enterprise::before {
   left: 0;
   padding-right: 80px;
@@ -72,6 +77,10 @@
     display: flex;
     flex-flow: column wrap;
     background-color: #121212;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -128,39 +137,52 @@
   .logo-1 {
     margin-top: 24px;
   }
+
   .cooperation-title {
     font-size: 20px;
   }
 
+
+
   .comment-list {
     margin-top: 48px;
     overflow-x: scroll;
-    overflow: hidden;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .list-card {
       margin-top: 20px;
-      width: calc(100% - 40px);
+      width: calc(100%);
       padding: 40px 20px;
+
       .comment-content {
-        border: 1px solid red;
-        width: calc(100vw - 80px);
+        width: calc(100vw - 65px);
       }
     }
   }
+
   .cooperation {
     .paginator {
       display: flex;
       justify-content: center;
       align-items: center;
+
       .page {
         width: 8px;
         height: 8px;
         background-color: #525252;
         margin-right: 8px;
         border-radius: 50%;
+
         &:hover {
           cursor: pointer;
         }
+
         &.active {
           background-color: #fff;
           width: 12px;
@@ -169,5 +191,5 @@
       }
     }
   }
-  
+
 }

@@ -13,7 +13,6 @@ let cardX = card1
 item.addEventListener("mousedown", (e) => {
   isDone = true
   startX = e.pageX
-  console.log("123", e.pageX);
 
 });
 
@@ -22,7 +21,6 @@ item.addEventListener("mousemove", (e) => {
   if(!isDone) return;
   move = startX - e.clientX
   item.scrollLeft = tempX +  move
-  console.log('move', startX, e.clientX, move)
 })
 
 item.addEventListener("mouseup", (e) => {
@@ -45,7 +43,7 @@ item.addEventListener("mouseup", (e) => {
     );
     tempX = tempX -  $('.comment-list').width() -16
   }
-console.log($('.comment-list').css('margin'))
+
   //處理page active
   if(tempX > card2.offsetLeft) {
     for (let i = 0; i < paginator.children.length; i++) {
@@ -116,7 +114,6 @@ paginator.addEventListener("click", (e) => {
 
  // back to top
  $('.to-top-btn').click(function(e){
-  console.log('123')
-  //e.preventDefault();
+  e.preventDefault();
   $('html,body').animate({scrollTop:0},800);
 });
