@@ -1,0 +1,46 @@
+.service {
+    margin-top: 160px;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      .service-title {
+        margin: 0;
+        width: 30%;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 38.4px;
+      }
+      .service-description {
+        width: 856px;
+        margin: 0;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 57.6px;
+        white-space: pre-line;
+      }
+    }
+  }
+  .service-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 0;
+    .list-card {
+      width: 32.3%;
+      margin-right: 20px;
+      padding: 80px 40px;
+      border: 1px solid #525252;
+      border-radius: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+      img {
+        margin-bottom: 20px;
+      }
+      .card-title {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 38.4px;
+      }
+    }
+  }

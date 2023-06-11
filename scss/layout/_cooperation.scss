@@ -1,0 +1,125 @@
+.cooperation {
+  margin-top: 160px;
+
+  &-title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38.4px;
+  }
+}
+
+.enterprise {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  position: relative;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.enterprise::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.enterprise {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.enterprise::after,
+.enterprise::before {
+  content: '';
+  position: absolute;
+  width: 196px;
+  height: 40px;
+  top: 0;
+}
+.enterprise::before {
+  left: 0;
+  padding-right: 80px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgb(0, 0, 0));
+}
+
+.enterprise::after {
+  right: 0;
+  padding-left: 80px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgb(0, 0, 0));
+}
+
+.logo-1 {
+  margin-top: 80px;
+}
+
+.logo-2 {
+  margin-top: 20px;
+}
+
+.partner-icon {
+  height: 40px;
+
+}
+
+.comment-list {
+  margin-top: 160px;
+  padding: 0;
+  display: flex;
+
+  .list-card {
+    width: 32.3%;
+    margin-right: 20px;
+    padding: 40px;
+    border-radius: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #121212;
+  }
+}
+
+.stars {
+  display: flex;
+
+  img {
+    display: block;
+  }
+}
+
+.comment-content {
+  margin-top: 20px;
+  flex-grow: 1;
+  color: #f2f2f2;
+}
+
+.comment-info {
+  margin-top: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+
+  .img-wrapper {
+    height: 40px;
+    width: 40px;
+
+    img {
+      max-height: 100%;
+    }
+  }
+
+  .info-wrapper {
+    display: block;
+    margin-left: 16px;
+
+    .name {
+      margin: 0;
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 700;
+    }
+
+    .company {
+      margin: 0;
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+    }
+  }
+}

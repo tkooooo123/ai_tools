@@ -1,0 +1,124 @@
+.tools-wrapper {
+    margin-top: 160px;
+    padding: 160px 0;
+    background-color: #fff;
+    border-radius: 160px;
+  }
+  h2 {
+  margin-bottom: 80px;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+    font-weight: 900;
+  }
+  .tools-search {
+    position: relative;
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 43px;
+      transform: translateY(-50%);
+      color: #919191;
+    }
+    .search-input {
+      height: 64px;
+      width:calc( 100% - 76px);
+      padding-left: 76px;
+      font-size: 16px;
+      background-color: #f2f2f2;
+      border: none;
+      border-radius: 16px;
+      &::placeholder { 
+        color: #919191;
+  
+      }
+    }
+  }
+  .tools-filter {
+    margin-top: 24px;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+   
+   
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 32%;
+      margin: 8px 0;
+      border-radius: 16px;
+      border: 1px solid #f2f2f2;
+      overflow: hidden;
+      .img-wrapper {
+        width: 416px;
+        overflow: hidden;
+        img {
+          transition: all 0.2s ease-in;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      .card-info {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        .info-wrapper {
+          flex-grow: 1;
+          padding: 20px 32px;
+          h3 {
+            margin: 0;
+            font-weight: 900;
+          }
+          p {
+            margin: 12px auto 0;
+            font-size: 14px;
+            color: #525252;
+          }
+        }
+        .module-wrapper {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 32px;
+          border-top: 1px solid #f2f2f2;
+          color: #000;
+          .module-type {
+            font-weight: 700;
+          }
+        }
+        .function-wrapper {
+        @extend .module-wrapper
+        }
+      }
+    }
+  }
+  .paginator {
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    .page-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-size: 14px;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      transition: all 0.25s ease-in;
+      &.active {
+        color: #fff;
+        background-color: #020202;
+      }
+      &:hover {
+        color: #fff;
+        background-color: #020202;
+        transition: all 0.25s ease-in;
+      }
+    }
+  }
