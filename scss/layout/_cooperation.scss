@@ -29,7 +29,7 @@
 .enterprise::before {
   content: '';
   position: absolute;
-  width: 196px;
+  width: 100px;
   height: 40px;
   top: 0;
 }
@@ -122,4 +122,52 @@
       font-weight: 400;
     }
   }
+}
+
+@media (max-width: 768px) {
+  .logo-1 {
+    margin-top: 24px;
+  }
+  .cooperation-title {
+    font-size: 20px;
+  }
+
+  .comment-list {
+    margin-top: 48px;
+    overflow-x: scroll;
+    overflow: hidden;
+
+    .list-card {
+      margin-top: 20px;
+      width: calc(100% - 40px);
+      padding: 40px 20px;
+      .comment-content {
+        border: 1px solid red;
+        width: calc(100vw - 80px);
+      }
+    }
+  }
+  .cooperation {
+    .paginator {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .page {
+        width: 8px;
+        height: 8px;
+        background-color: #525252;
+        margin-right: 8px;
+        border-radius: 50%;
+        &:hover {
+          cursor: pointer;
+        }
+        &.active {
+          background-color: #fff;
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+  
 }

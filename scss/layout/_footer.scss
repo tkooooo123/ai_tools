@@ -63,3 +63,30 @@
     }
   }
   
+@media (max-width: 768px) {
+  .footer {
+    .main {
+      flex-direction: column-reverse;
+      .list-group {
+        margin-top: 40px;
+        .list-item {
+          font-size: 48px;
+          line-height: 57.6px;
+        }
+      }
+    }
+    .sub {
+      display: block;
+      height: 148px;
+      &-title {
+        margin: 32px 0;
+      }
+      .link-list {
+        margin: 36px 0 32px;
+      }
+    }
+    .to-top-btn {
+      margin-top: 20px;
+    }
+  }
+}

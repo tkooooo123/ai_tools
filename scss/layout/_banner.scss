@@ -13,3 +13,14 @@
       margin-top: 32px;
     }
   }
+
+  @media (max-width: 768px) {
+    .banner {
+      .title {
+        margin-top: 40px;
+        font-size: 32px;
+        line-height: 38.4px;
+        padding: 0 19.6%;
+      }
+    }
+  }

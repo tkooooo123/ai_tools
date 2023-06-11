@@ -42,5 +42,40 @@
         font-weight: 900;
         line-height: 38.4px;
       }
+      .card-content {
+        margin-top: 20px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .service {
+      .wrapper {
+        display: block;
+        .service-title {
+          width: 100%;
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .service-description {
+          max-width: 100%;
+          margin-top: 24px;
+          font-size: 32px;
+          line-height: 38.4px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .service-list {
+      display: block;
+      margin-top: 48px;
+      .list-card {
+        margin-top: 20px;
+        width: calc(100% - 40px);
+        padding: 40px 20px;
+      }
     }
   }
